@@ -17,6 +17,8 @@
 	$desc = mysqli_real_escape_string($conn, (String) $_POST["desc"]);
 	$fee = mysqli_real_escape_string($conn, (String) $_POST["fee"]);
 	$type = mysqli_real_escape_string($conn, (String) $_POST["type"]);
+	
+	
 
 	// First obtain the student's team
 	$sql = "INSERT answer (instanceId, studentId, answer)
